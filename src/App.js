@@ -1,33 +1,32 @@
 import React, { useState } from "react";
-import MyButton from "./Components/MyButton";
-import Profile from "./pages/Profile";
+import BasicReact from "./pages/BasicReact";
+import Game from "./Tic_Tac_Toe/Game";
 
 const App = () => {
-  const [count, setCount] = useState(0);
-  const increase = () => {
-    setCount(count + 1);
-  };
-  const decrease = () => {
-    setCount(count - 1);
-  };
+  const [basic, setBasic] = useState(false);
   return (
-    <div className="container">
-      <h2>This is home page and for counter</h2>
-      <MyButton
-        title={"increase"}
-        count={count}
-        setCount={increase}
-        disable={false}
-      />
-      <h2>{count}</h2>
-      <MyButton
-        title={"decrease"}
-        count={count}
-        setCount={decrease}
-        disable={count === 0 ? true : false}
-      />
-
-      <Profile />
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <button
+        style={{
+          width: 150,
+          height: 50,
+          color: "magenta",
+          fontWeight: "bold",
+          fontSize: 15,
+          marginBlock: 20,
+          cursor: "pointer",
+        }}
+        onClick={() => setBasic(!basic)}
+      >
+        Switch page
+      </button>
+      {basic ? <BasicReact /> : <Game />}
     </div>
   );
 };
