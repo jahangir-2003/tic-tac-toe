@@ -12,7 +12,7 @@ const App = () => {
   };
   return (
     <div className="container">
-      <h2>This is home page and for counter</h2>
+      <h2>This is home page </h2>
       <div className="counter-containter">
         <MyButton
           title={"increase"}
