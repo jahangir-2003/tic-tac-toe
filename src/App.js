@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MyButton from "./Components/MyButton";
+import Profile from "./pages/Profile";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -25,6 +26,8 @@ const App = () => {
         setCount={decrease}
         disable={count === 0 ? true : false}
       />
+
+      <Profile />
     </div>
   );
 };
