@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BasicReact from "./pages/BasicReact";
 import Game from "./Tic_Tac_Toe/Game";
+import Button from "./Components/Button";
 
 const App = () => {
   const [basic, setBasic] = useState(false);
@@ -12,7 +13,11 @@ const App = () => {
         alignItems: "center",
       }}
     >
-      <button
+      <Button
+        title={basic ? "go to game" : "Go for basic react"}
+        onClick={() => setBasic(!basic)}
+      />
+      {/* <button
         style={{
           width: 150,
           height: 50,
@@ -25,7 +30,7 @@ const App = () => {
         onClick={() => setBasic(!basic)}
       >
         Switch page
-      </button>
+      </button> */}
       {basic ? <BasicReact /> : <Game />}
     </div>
   );
