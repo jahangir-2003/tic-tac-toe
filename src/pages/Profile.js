@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AdminPanel from "../Components/AdminPanel";
 import LoginForm from "../Components/LoginForm";
+import Button from "../Components/Button";
 
 const Profile = () => {
   const [isLogin, setIslogin] = useState(false);
@@ -13,12 +14,13 @@ const Profile = () => {
   return (
     <>
       {content}
-      <button onClick={() => setIslogin(!isLogin)}>set login</button>
+      <Button title={"switch page"} onClick={() => setIslogin(!isLogin)} />
 
       {isLogin ? <AdminPanel /> : <LoginForm />}
-      <button onClick={() => setIslogin(!isLogin)}>
-        set login conditional
-      </button>
+      <Button
+        onClick={() => setIslogin(!isLogin)}
+        title={"conditional switch"}
+      />
     </>
   );
 };

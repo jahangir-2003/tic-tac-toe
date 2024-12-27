@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Square from "./Component/Square";
+import Button from "../Components/Button";
 
 const CalculateWinner = (squares) => {
   // console.log(squares);
@@ -32,19 +33,19 @@ const calculateDraw = (squares) => {
 const Game = () => {
   const [Squares, setSquares] = useState(Array(9).fill(null));
   const [xTurn, setXTurn] = useState(true);
-
   const isDraw = calculateDraw(Squares);
   console.log(isDraw);
   const winner = CalculateWinner(Squares);
   let status;
   if (winner) {
-    status = "Winner:-" + winner;
+    status = "winner is :-" + winner;
   } else if (!winner && isDraw) {
     console.log("draw");
-    status = "Match Draw restart";
+    status = "Match Draw please restart";
   } else {
-    status = "Next player:-" + (xTurn ? " X " : " O ");
+    status = "Next player :- " + (xTurn ? " X " : " O ");
   }
+
   const handleClick = (i) => {
     const nextSquare = Squares.slice();
     // console.log(Squares[i]);
@@ -59,6 +60,9 @@ const Game = () => {
   };
 
   // console.log(Squares);
+  const resetGame = () => {
+    setSquares(Array(9).fill(null));
+  };
   return (
     <div
       style={{
@@ -77,7 +81,12 @@ const Game = () => {
           gridTemplateColumns: "repeat(3, 1fr)",
         }}
       >
-        <Square value={Squares[0]} onClick={() => handleClick(0)} />
+        {Array(9)
+          .fill()
+          .map((item, index) => (
+            <Square value={Squares[index]} onClick={() => handleClick(index)} />
+          ))}
+        {/* <Square value={Squares[0]} onClick={() => handleClick(0)} />
         <Square value={Squares[1]} onClick={() => handleClick(1)} />
         <Square value={Squares[2]} onClick={() => handleClick(2)} />
         <Square value={Squares[3]} onClick={() => handleClick(3)} />
@@ -85,8 +94,10 @@ const Game = () => {
         <Square value={Squares[5]} onClick={() => handleClick(5)} />
         <Square value={Squares[6]} onClick={() => handleClick(6)} />
         <Square value={Squares[7]} onClick={() => handleClick(7)} />
-        <Square value={Squares[8]} onClick={() => handleClick(8)} />
+        <Square value={Squares[8]} onClick={() => handleClick(8)} /> */}
       </div>
+
+      {(isDraw || winner) && <Button title={"restart"} onClick={resetGame} />}
     </div>
   );
 };
