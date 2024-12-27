@@ -2,7 +2,7 @@ import React from "react";
 
 const AdminPanel = () => {
   return (
-    <div>
+    <div style={{ textTransform: "capitalize" }}>
       <h2>this is admin panel</h2>
     </div>
   );

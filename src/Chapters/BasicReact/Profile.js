@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import AdminPanel from "../Components/AdminPanel";
-import LoginForm from "../Components/LoginForm";
-import Button from "../Components/Button";
+import AdminPanel from "./Components/AdminPanel";
+import LoginForm from "./Components/LoginForm";
+import Button from "../../Components/Button";
 
 const Profile = () => {
   const [isLogin, setIslogin] = useState(false);
