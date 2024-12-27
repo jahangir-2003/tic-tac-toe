@@ -7,7 +7,15 @@ const Lists = () => {
     { title: "Apple", isFruit: true, id: 3 },
   ];
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <h2>This is List page</h2>
       <ul>
         {products?.map((item) => (
           <li

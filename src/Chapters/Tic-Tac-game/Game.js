@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Square from "./Component/Square";
-import Button from "../Components/Button";
+import Button from "../../Components/Button";
 
 const CalculateWinner = (squares) => {
   // console.log(squares);
@@ -34,7 +34,7 @@ const Game = () => {
   const [Squares, setSquares] = useState(Array(9).fill(null));
   const [xTurn, setXTurn] = useState(true);
   const isDraw = calculateDraw(Squares);
-  console.log(isDraw);
+  // console.log(isDraw);
   const winner = CalculateWinner(Squares);
   let status;
   if (winner) {
@@ -84,7 +84,11 @@ const Game = () => {
         {Array(9)
           .fill()
           .map((item, index) => (
-            <Square value={Squares[index]} onClick={() => handleClick(index)} />
+            <Square
+              key={index}
+              value={Squares[index]}
+              onClick={() => handleClick(index)}
+            />
           ))}
         {/* <Square value={Squares[0]} onClick={() => handleClick(0)} />
         <Square value={Squares[1]} onClick={() => handleClick(1)} />

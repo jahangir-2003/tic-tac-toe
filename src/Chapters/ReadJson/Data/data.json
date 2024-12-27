@@ -1,0 +1,332 @@
+[
+    {
+        "category": "Fruits",
+        "price": "$1",
+        "stocked": true,
+        "name": "Apple"
+    },
+    {
+        "category": "Fruits",
+        "price": "$1",
+        "stocked": true,
+        "name": "Dragonfruit"
+    },
+    {
+        "category": "Fruits",
+        "price": "$2",
+        "stocked": false,
+        "name": "Passionfruit"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$2",
+        "stocked": true,
+        "name": "Spinach"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$4",
+        "stocked": false,
+        "name": "Pumpkin"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$1",
+        "stocked": true,
+        "name": "Peas"
+    },
+    {
+        "category": "Fruits",
+        "price": "$3",
+        "stocked": true,
+        "name": "Orange"
+    },
+    {
+        "category": "Fruits",
+        "price": "$2",
+        "stocked": false,
+        "name": "Mango"
+    },
+    {
+        "category": "Fruits",
+        "price": "$1.5",
+        "stocked": true,
+        "name": "Banana"
+    },
+    {
+        "category": "Fruits",
+        "price": "$3.5",
+        "stocked": true,
+        "name": "Grapes"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$2.5",
+        "stocked": true,
+        "name": "Carrot"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$1.5",
+        "stocked": true,
+        "name": "Cucumber"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$3",
+        "stocked": false,
+        "name": "Broccoli"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$1.2",
+        "stocked": true,
+        "name": "Lettuce"
+    },
+    {
+        "category": "Grains",
+        "price": "$1.8",
+        "stocked": true,
+        "name": "Rice"
+    },
+    {
+        "category": "Grains",
+        "price": "$2.3",
+        "stocked": false,
+        "name": "Quinoa"
+    },
+    {
+        "category": "Grains",
+        "price": "$2.5",
+        "stocked": true,
+        "name": "Oats"
+    },
+    {
+        "category": "Grains",
+        "price": "$3",
+        "stocked": true,
+        "name": "Barley"
+    },
+    {
+        "category": "Grains",
+        "price": "$1.2",
+        "stocked": true,
+        "name": "Cornmeal"
+    },
+    {
+        "category": "Grains",
+        "price": "$4",
+        "stocked": true,
+        "name": "Buckwheat"
+    },
+    {
+        "category": "Grains",
+        "price": "$3.5",
+        "stocked": false,
+        "name": "Millet"
+    },
+    {
+        "category": "Grains",
+        "price": "$2",
+        "stocked": true,
+        "name": "Farro"
+    },
+    {
+        "category": "Grains",
+        "price": "$1.7",
+        "stocked": true,
+        "name": "Couscous"
+    },
+    {
+        "category": "Dairy",
+        "price": "$1.5",
+        "stocked": true,
+        "name": "Milk"
+    },
+    {
+        "category": "Dairy",
+        "price": "$2",
+        "stocked": true,
+        "name": "Cheese"
+    },
+    {
+        "category": "Dairy",
+        "price": "$3",
+        "stocked": false,
+        "name": "Butter"
+    },
+    {
+        "category": "Dairy",
+        "price": "$2.5",
+        "stocked": true,
+        "name": "Yogurt"
+    },
+    {
+        "category": "Dairy",
+        "price": "$4",
+        "stocked": false,
+        "name": "Cream"
+    },
+    {
+        "category": "Dairy",
+        "price": "$1",
+        "stocked": true,
+        "name": "Eggs"
+    },
+    {
+        "category": "Dairy",
+        "price": "$1.8",
+        "stocked": true,
+        "name": "Cottage Cheese"
+    },
+    {
+        "category": "Dairy",
+        "price": "$2.3",
+        "stocked": true,
+        "name": "Milk Powder"
+    },
+    {
+        "category": "Dairy",
+        "price": "$3.5",
+        "stocked": true,
+        "name": "Ice Cream"
+    },
+    {
+        "category": "Dairy",
+        "price": "$3",
+        "stocked": false,
+        "name": "Sour Cream"
+    },
+    {
+        "category": "Dairy",
+        "price": "$2.5",
+        "stocked": true,
+        "name": "Ricotta"
+    },
+    {
+        "category": "Dairy",
+        "price": "$4.5",
+        "stocked": true,
+        "name": "Mozzarella"
+    },
+    {
+        "category": "Fruits",
+        "price": "$1.2",
+        "stocked": true,
+        "name": "Strawberry"
+    },
+    {
+        "category": "Fruits",
+        "price": "$2.8",
+        "stocked": false,
+        "name": "Blueberry"
+    },
+    {
+        "category": "Fruits",
+        "price": "$3.2",
+        "stocked": true,
+        "name": "Pineapple"
+    },
+    {
+        "category": "Fruits",
+        "price": "$4.2",
+        "stocked": true,
+        "name": "Kiwi"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$2.8",
+        "stocked": true,
+        "name": "Asparagus"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$3.5",
+        "stocked": false,
+        "name": "Eggplant"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$1.5",
+        "stocked": true,
+        "name": "Tomato"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$2.2",
+        "stocked": true,
+        "name": "Zucchini"
+    },
+    {
+        "category": "Vegetables",
+        "price": "$1.6",
+        "stocked": true,
+        "name": "Onion"
+    },
+    {
+        "category": "Fruits",
+        "price": "$2.6",
+        "stocked": false,
+        "name": "Papaya"
+    },
+    {
+        "category": "Fruits",
+        "price": "$1.7",
+        "stocked": true,
+        "name": "Peach"
+    },
+    {
+        "category": "Grains",
+        "price": "$1.9",
+        "stocked": true,
+        "name": "Wheat"
+    },
+    {
+        "category": "Grains",
+        "price": "$2.2",
+        "stocked": true,
+        "name": "Rice Noodles"
+    },
+    {
+        "category": "Grains",
+        "price": "$3",
+        "stocked": true,
+        "name": "Polenta"
+    },
+    {
+        "category": "Grains",
+        "price": "$2.5",
+        "stocked": false,
+        "name": "Spelt"
+    },
+    {
+        "category": "Grains",
+        "price": "$2",
+        "stocked": true,
+        "name": "Brown Rice"
+    },
+    {
+        "category": "Dairy",
+        "price": "$1.2",
+        "stocked": true,
+        "name": "Soy Milk"
+    },
+    {
+        "category": "Dairy",
+        "price": "$2.7",
+        "stocked": true,
+        "name": "Almond Milk"
+    },
+    {
+        "category": "Dairy",
+        "price": "$3.2",
+        "stocked": true,
+        "name": "Goat Cheese"
+    },
+    {
+        "category": "Dairy",
+        "price": "$2.8",
+        "stocked": true,
+        "name": "Cream Cheese"
+    }
+]
